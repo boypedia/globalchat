@@ -7,8 +7,8 @@
   <meta name="theme-color" content="black">  
   <meta property="og:title" content="Memulai obrolan baru dengan teman baru di global chat">
   <meta property="og:description" content="Made by Mhd Yasin"> 
-  <meta property="og:image" content="https://e.top4top.io/p_2150imcxk0.jpg"> 
-  <link rel="SHORTCUT ICON" href="https://e.top4top.io/p_2150imcxk0.jpg">
+  <meta property="og:image" content="https://j.top4top.io/p_3078l1aj30.jpeg"> 
+  <link rel="SHORTCUT ICON" href="https://j.top4top.io/p_3078l1aj30.jpeg">
   <style>
     body {
       background-color: black;
@@ -16,9 +16,9 @@
       text-align: center;
     }
     h1 {
-      color: red;
       font-size: 36px; /* Ukuran teks besar */
       font-weight: bold; /* Teks tebal */
+      animation: color-change 5s infinite;
     }
     #jam {
       font-size: 24px; /* Ukuran teks jam */
@@ -27,68 +27,77 @@
     iframe {
       border: none;
     }
+    @keyframes color-change {
+      0% { color: red; }
+      14% { color: orange; }
+      28% { color: yellow; }
+      42% { color: green; }
+      56% { color: blue; }
+      70% { color: indigo; }
+      84% { color: violet; }
+      100% { color: red; }
+    }
   </style>
 </head>
 <body>
-  <h1>CHAT GLOBAL</h1><br>
+  <h1>CHAT GLOBAL</h1>
   <iframe src="https://www5.cbox.ws/box/?boxid=951397&boxtag=cqo91J" width="100%" height="500" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-  <script type="text/javascript"><!--
-var message="Sorry, right-click has been disabled";function clickIE(){if(document.all){(message);return false;}}
-function clickNS(e){if(document.layers||(document.getElementById&&!document.all)){if(e.which==2||e.which==3){(message);return false;}}}
-if(document.layers)
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-document.oncontextmenu=new Function("return false")
-</script>
-</head><body><center>
-<marquee behavior="alternate" scrollamount="100" width="350" style="width: 350px;"> <font size="4" color="red">______________________________________________________________<font size="4" color="yellow">______________________________________________________________<font size="4" color="#1CFF00">_____________________________________________________________<font size="4" color="#00A7FF">________________</font></font></font></font></marquee>
+  <script type="text/javascript">
+    var message="Sorry, right-click has been disabled";
+    function clickIE() {
+      if (document.all) {
+        alert(message);
+        return false;
+      }
+    }
+    function clickNS(e) {
+      if (document.layers || (document.getElementById && !document.all)) {
+        if (e.which == 2 || e.which == 3) {
+          alert(message);
+          return false;
+        }
+      }
+    }
+    if (document.layers) {
+      document.captureEvents(Event.MOUSEDOWN);
+      document.onmousedown = clickNS;
+    } else {
+      document.onmouseup = clickNS;
+      document.oncontextmenu = clickIE;
+    }
+    document.oncontextmenu = new Function("return false");
+  </script>
+  <marquee behavior="alternate" scrollamount="100" width="350" style="width: 350px;">
+    <font size="4" color="red">______________________________________________________________</font>
+    <font size="4" color="yellow">______________________________________________________________</font>
+    <font size="4" color="#1CFF00">_____________________________________________________________</font>
+    <font size="4" color="#00A7FF">________________</font>
+  </marquee><br><br>
+  <div id="jam">12:23:51</div>
+  <script type="text/javascript">
+    function waktu() {   
+      var tanggal = new Date();  
+      setTimeout("waktu()", 1000);  
+      document.getElementById("jam").innerHTML = tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds();
+    }
+    waktu();
+  </script>
+  <br>
+  <center>
+    <audio id="audioNotifikasi">
+      <source src="https://d.top4top.io/m_1864dsujr0.mp3" type="audio/mpeg">
+    </audio>
+    <button style="border:2px solid white; border-radius:30px; background-color:white;" onclick="playAudio()" type="button"><font face="monaco" size="4" color="red">Play Music</font></button>
+    <button style="border:2px solid white; border-radius:30px; background-color:white;" onclick="pauseAudio()" type="button"><font face="monaco" size="4" color="red">Pause Music</font></button>
+    <script type="text/javascript">
+      var el = document.getElementById("audioNotifikasi"); 
+      function playAudio() { 
+        el.play(); 
+      } 
+      function pauseAudio() { 
+        el.pause(); 
+      } 
+    </script>
+  </center>
 </body>
 </html>
-<br>
-      <div id="jam">12:23:51</div>
-     </center> 
- 
-  <script type="text/javascript">
-// 1 detik = 1000
-window.setTimeout("waktu()",1000);  
-function waktu() {   
-var tanggal = new Date();  
-setTimeout("waktu()",1000);  
-document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
-}
-</script> 
-  
-  <br>
-  </script>
-    </center> 
-    <!----> 
-    <center>
-<audio id="audioNotifikasi">
-  
-   <source src="https://d.top4top.io/m_1864dsujr0.mp3" type="audio/mpeg">
-
-</audio>
-
-<button style="border:2px solid white; border-radius:30px; background-color:white;" onclick="playAudio()" type="button"><font face="monaco" size="4" color="red">Play Music</font></button>
-
-<button style="border:2px solid white; border-radius:30px; background-color:white;" onclick="pauseAudio()" type="button"><font face="monaco" size="4" color="red">Pause Music</font></button>
-
-<script type="text/javascript">
-
-var el = document.getElementById("audioNotifikasi"); 
-
-function playAudio() { 
-
-  el.play(); 
-
-} 
-
-function pauseAudio() { 
-
-  el.pause(); 
-
-} 
-
-</script>
-</center>
-</body></html>
