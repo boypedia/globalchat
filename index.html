@@ -20,6 +20,10 @@
       font-size: 36px; /* Ukuran teks besar */
       font-weight: bold; /* Teks tebal */
     }
+    #jam {
+      font-size: 24px; /* Ukuran teks jam */
+      font-weight: bold; /* Teks jam tebal */
+    }
     iframe {
       border: none;
     }
@@ -28,10 +32,64 @@
 <body>
   <h1>CHAT GLOBAL</h1><br><br>
   <iframe src="https://www5.cbox.ws/box/?boxid=951397&boxtag=cqo91J" width="100%" height="500" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-
-  <!-- Audio Element -->
-      <audio autoplay loop>
-      <source src="https://pomf2.lain.la/f/juy8s18k.mp3" type="audio/mpeg">
-      </audio>
+  <script type="text/javascript"><!--
+var message="Sorry, right-click has been disabled";function clickIE(){if(document.all){(message);return false;}}
+function clickNS(e){if(document.layers||(document.getElementById&&!document.all)){if(e.which==2||e.which==3){(message);return false;}}}
+if(document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+</script>
+</head><body><center>
+<marquee behavior="alternate" scrollamount="100" width="350" style="width: 350px;"> <font size="4" color="red">______________________________________________________________<font size="4" color="yellow">______________________________________________________________<font size="4" color="#1CFF00">_____________________________________________________________<font size="4" color="#00A7FF">________________</font></font></font></font></marquee>
 </body>
 </html>
+<br><br>
+      <div id="jam">12:23:51</div>
+     </center> 
+ 
+  <script type="text/javascript">
+// 1 detik = 1000
+window.setTimeout("waktu()",1000);  
+function waktu() {   
+var tanggal = new Date();  
+setTimeout("waktu()",1000);  
+document.getElementById("jam").innerHTML = tanggal.getHours()+":"+tanggal.getMinutes()+":"+tanggal.getSeconds();
+}
+</script> 
+  
+  <br>
+  <br> 
+  </script>
+    </center> 
+    <!----> 
+    <center>
+<audio id="audioNotifikasi">
+  
+   <source src="https://d.top4top.io/m_1864dsujr0.mp3" type="audio/mpeg">
+
+</audio>
+
+<button style="border:2px solid white; border-radius:30px; background-color:white;" onclick="playAudio()" type="button"><font face="monaco" size="4" color="red">Play Music</font></button>
+
+<button style="border:2px solid white; border-radius:30px; background-color:white;" onclick="pauseAudio()" type="button"><font face="monaco" size="4" color="red">Pause Music</font></button>
+
+<script type="text/javascript">
+
+var el = document.getElementById("audioNotifikasi"); 
+
+function playAudio() { 
+
+  el.play(); 
+
+} 
+
+function pauseAudio() { 
+
+  el.pause(); 
+
+} 
+
+</script>
+</center>
+</body></html>
