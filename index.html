@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHAT GLOBAL</title>
+  <meta name="theme-color" content="black">  
+  <meta property="og:title" content="Memulai obrolan baru dengan teman baru di global chat">
+  <meta property="og:description" content="Made by Mhd Yasin"> 
+  <meta property="og:image" content="https://e.top4top.io/p_2150imcxk0.jpg"> 
+  <link rel="SHORTCUT ICON" href="https://e.top4top.io/p_2150imcxk0.jpg">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      color: red;
+      font-size: 36px; /* Ukuran teks besar */
+      font-weight: bold; /* Teks tebal */
+    }
+    iframe {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>CHAT GLOBAL</h1><br><br>
+  <iframe src="https://www5.cbox.ws/box/?boxid=951397&boxtag=cqo91J" width="100%" height="500" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+
+  <!-- Audio Element -->
+  <audio id="bg-music" autoplay>
+    <source src="audio1.mp3" type="audio/mpeg">
+    <source src="audio2.mp3" type="audio/mpeg">
+    <source src="audio3.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // List audio yang akan diputar
+    var audioList = [
+      'audio1.mp3',
+      'audio2.mp3',
+      'audio3.mp3'
+    ];
+
+    var currentIndex = 0;
+    var bgMusic = document.getElementById('bg-music');
+
+    // Event saat audio selesai diputar
+    bgMusic.addEventListener('ended', function() {
+      // Pindah ke audio berikutnya
+      currentIndex++;
+      // Jika sudah mencapai audio terakhir, kembali ke audio pertama
+      if (currentIndex >= audioList.length) {
+        currentIndex = 0;
+      }
+      // Setel sumber audio sesuai dengan indeks saat ini
+      bgMusic.src = audioList[currentIndex];
+      // Putar audio berikutnya
+      bgMusic.play();
+    });
+  </script>
+</body>
+</html>
